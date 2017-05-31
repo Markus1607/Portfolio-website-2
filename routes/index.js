@@ -17,6 +17,10 @@ router.get('/blog', function(req, res, next) {
   res.render('blog');
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact');
+});
+
 
 
 module.exports = router;
