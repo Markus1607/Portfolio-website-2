@@ -5,11 +5,21 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
-
-
+var mongoose = require("mongoose");
+var Blogs = require("./models/Blog");
 //routes
 var index = require('./routes/index');
 var app = express();
+
+
+
+//seeding database;
+var seedDB = require('./seed');
+
+
+//connect to the database
+mongoose.connect("mongodb://localhost/personalSite");
+seedDB();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

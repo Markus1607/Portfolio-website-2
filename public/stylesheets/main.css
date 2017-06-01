@@ -41,7 +41,7 @@ nav {
 
 .intro {
   margin-top: 4.5%;
-  background: #afc4d7;
+  background: rgba(0, 0, 0, 0.5);
   width: 80%;
   padding: 20px 0;
   margin-right: auto;
@@ -66,14 +66,12 @@ nav {
 
 .intro-details-sub {
   text-align: center;
-  text-shadow: 0px 0px 2px #000;
   font-size: 30px;
 }
 
 .intro-details-title {
   font-size: 40px;
   text-align: center;
-  text-shadow: 0px 0px 4px #000;
 }
 
 .intro-details-text {
