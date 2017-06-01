@@ -3,23 +3,28 @@
 
 $temp: #afc4d7
 
+
+
 .intro
   margin-top: 4.5%
   background: rgba(0,0,0,0.5)
   width: 80%
-  padding: 20px 0
+  padding: 23px 10px
   margin-right: auto
   margin-left: auto
   box-shadow: 0px 0px 4px #eee, 0px 0px 6px #000
-  display: flex
+  //display: flex
   align-items: center
   justify-content: space-around
   color: #fff
 
-
   &-img
     //border: 5px solid
     //border-radius: 10%
+    width: 22.5em
+    @media screen and (max-width: 600px )
+      width: 15em
+    flex-shrink: 1
 
     img
       width: 100%
@@ -28,35 +33,40 @@ $temp: #afc4d7
       border-radius: 6%
 
   &-details
-    width: 48%
+    //width: 48%
 
     &-sub
       text-align: center
-      //text-shadow: 0px 0px 2px #000
       font-size: 30px
     &-title
       font-size: 40px
       text-align: center
-      //text-shadow: 0px 0px 4px #000
+      @media screen and (max-width: 765px)
+        font-size: 30px
 
     &-text
       font-size: 20px
       font-weight: 200
       word-spacing: 2px
       line-height: 150%
+      @media screen and (max-width: 1020px)
+        text-align: center
+        font-size: 16px
+        padding: 0 6px
 
     &-icons
       margin-top: 5%
-      display: flex
-      margin-right: auto
-      margin-left: auto
-      width: 50%
+      text-align: center
       justify-content: space-around
       transition: all .3s ease
 
 
       a
         color: #fff
+
         &:hover
-          color: steelblue
+          opacity: 0.7
           transform: scale(1.2)
+
+        @media screen and (min-width: 1260px)
+          padding: 0 10px

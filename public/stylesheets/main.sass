@@ -7,27 +7,63 @@ $small-font: 400
 
 
 
-//colors
-$body-bg: #F2F2F2
-$body-bg2: #dde6ee
-$text-color: #2d2d2d
-$text-color2: #7FC1FF
-
 
 body
   font-family: $font-family
-  background-color: $body-bg2
+  background-color: #fff
 
   box-sizing: border-box
   font-smoothing: antialiased
   margin: 0
   padding: 0
 
+
+.container
+  width: 80%
+  height: auto
+
+
 nav
-  background: #afc4d7
+  background: #6E7377
   margin: 0
   padding: 0
   box-shadow: 0px 0px 2px #eee, 0px 0px 4px #000
+
+
+.mobile-menu
+  //width: 80%
+  display: none
+  align-content: center
+  margin-right: auto
+  margin-left: auto
+  justify-content: space-around
+  color: #fff
+
+  &-title
+    font-size: 30px
+
+  @media screen and (max-width: 763px)
+    display: flex
+  &-hamburger
+    width: 50px
+    height: 5px
+    background: #fff
+    align-self: center
+    &::before, &::after
+      position: absolute
+      content: " "
+      width: 50px
+      height: 5px
+      background: #fff
+
+    &::before
+      top: 42px
+    &::after
+      top: 71px
+
+
+
+
 
 .nav-menu
   display: flex
@@ -42,6 +78,8 @@ nav
   padding: 20px 0
   margin-top: 0
   text-transform: uppercase
+  @media screen and (max-width: 763px)
+    display: none
   li
     list-style: none
   a
@@ -52,3 +90,5 @@ nav
 
 
 @import "./partials/intro"
+@import "./partials/projects"
+@import "./partials/blog"
