@@ -1,9 +1,14 @@
 
 <% include ./partials/header %>
 
-
-  <span><%= blog.createdAt.toDateString() %></span>
-  <h1><%= blog.title %></h1>
-  <p><%= blog.description %></p>
+    <div class="container">
+      <div class="row show">
+        <div class="col-md-12">
+          <h1 class="show-title"><%= blog.title.toUpperCase() %></h1>
+          <span class="show-date"><%= blog.createdAt.toDateString() %></span>
+          <p class="show-details"> <%= blog.details %></p>
+        </div>
+      </div>
+    </div>
 
 <% include ./partials/footer %>

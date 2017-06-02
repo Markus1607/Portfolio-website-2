@@ -35,14 +35,24 @@ router.get("/blogs/:id", function(req, res, next){
     if(err){
       res.render("error");
     }
-    else {
-      res.render('show', {blog: data});
+
+
+    //first artice
+    if (data.title === "New features in es6"){
+      res.render("blogs/es6-features", {blog: data})
     }
+
+    //second article
+    if (data.title === "JavaScript Object Prototypes"){
+      res.render("blogs/javaScript-prototypes", {blog: data})
+    }
+
+    res.render('show', {blog: data});
   })
 })
 
-router.get('/contact', function(req, res, next) {
-  res.render('contact');
+router.get('/resources', function(req, res, next) {
+  res.render('resources');
 });
 
 
