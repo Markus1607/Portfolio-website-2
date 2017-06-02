@@ -209,14 +209,14 @@ nav {
   box-shadow: 0px 0px 4px #eee, 0px 0px 6px #000;
 }
 
-.projects-title, .projects-title2 {
+.projects-title, .projects-title2, .projects-title3 {
   font-size: 30px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 
-.projects-title2 {
+.projects-title2, .projects-title3 {
   margin-top: 60px;
   text-align: center;
 }
