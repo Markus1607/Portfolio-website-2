@@ -2,12 +2,20 @@
 
     <% blogs.forEach(function(blog){ %>
 
-        <a href="/blogs/<%= blog._id %>" class="btn btn-primary text-center">
-          <h4>  <%= blog.createdAt.toDateString() %> </h4>
-          <h1> <%= blog.title %> </h1>
-          <p>  <%= blog.details %> </p>
-        </a>
+          <div class="container">
+            <div class="row blog">
+              <div class="col-md-12 col-xs-12">
 
+                <h1 class="blog-title"> <%= blog.title %> </h1>
+                <span class="bolg-date">  <%= blog.createdAt.toDateString() %> <span>
+                <p class="blog-details">  <%= blog.details.substr(0, 400) %> ..... </p>
+                <a href="/blogs/<%= blog._id %>" class="blog-readmore">
+                  Readmore <span>&rarr;</span>
+                </a>
+
+              </div>
+            </div>
+          </div>
     <% }) %>
 
 <% include ./partials/footer.ejs %>
