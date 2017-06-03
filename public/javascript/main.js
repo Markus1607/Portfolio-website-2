@@ -1,8 +1,8 @@
 
 (function(){
   "use strict";
-
-
+  
+    //Resources page canvas code
     var canvas = document.getElementById('comingSoon');
     var ctx = canvas.getContext('2d');
     var particles = [];

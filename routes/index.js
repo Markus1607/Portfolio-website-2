@@ -33,7 +33,7 @@ router.get("/blogs/:id", function(req, res, next){
 
   Blogs.findById(id, function(err, data){
     if(err){
-      res.render("error");
+      res.send("this page does not exist buddy");
     }
 
 
@@ -56,5 +56,9 @@ router.get('/resources', function(req, res, next) {
 });
 
 
+
+router.get("*", function(req, res){
+  res.send("This page does not exit buddy");
+})
 
 module.exports = router;
