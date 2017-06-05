@@ -4,13 +4,13 @@ var Blogs = require("../models/Blog");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index');
 });
 
 
 // //Get projects page
 router.get('/projects', function(req, res, next) {
-  res.render('projects', {title : "Express"});
+  res.render('projects');
 });
 
 // //Get index page

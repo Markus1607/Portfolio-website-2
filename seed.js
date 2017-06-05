@@ -14,8 +14,8 @@ var data = [
     details: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to"
   },
   {
-    title: "Regular Expressions",
-    details: "this is the first blog i will ever make in my life, this is so awesome i don't think i am gonna stop making its simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, also the leap into electronic typesetting, remaining essentially unchanged"
+    title:"JavaScript Design Patterns",
+    details: "This session is gonna about how javascript design patterns work and its gonna be awesomeeeeeeee!"
   }
 ];
 
