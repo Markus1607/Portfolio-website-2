@@ -11,15 +11,16 @@ var Blogs = require("./models/Blog");
 var index = require('./routes/index');
 var app = express();
 
-
-
+//importing environment variables
+require("dotenv").config({ path: "variables.env"});
 //seeding database;
 var seedDB = require('./seed');
 
 
 //connect to the database
-mongoose.connect("mongodb://localhost/personalSite");
-seedDB();
+//mongoose.connect("mongodb://localhost/personalSite");
+mongoose.connect(process.env.DATABASE);
+//seedDB()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,9 +43,6 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/projects', index);
-app.use('/blog', index);
-app.use('/contact', index)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
