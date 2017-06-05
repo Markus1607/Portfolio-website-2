@@ -44,7 +44,7 @@ router.get("/blogs/:id", function(req, res, next){
 
     //second article
     if (data.title === "JavaScript Object Prototypes"){
-      res.render("blogs/javaScript-prototypes", {blog: data})
+      res.render("blogs/javascript-prototypes", {blog: data})
     }
 
     res.render('show', {blog: data});
