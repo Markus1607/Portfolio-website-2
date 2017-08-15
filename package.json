@@ -1,13 +1,13 @@
 {
   "name": "personal-site",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "engines": {
     "node": "6.10.1"
   },
-  "main":"./bin/www",
+  "main": "./bin/www",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.17.1",

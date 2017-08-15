@@ -18,8 +18,8 @@ var seedDB = require('./seed');
 
 
 //connect to the database
-//mongoose.connect("mongodb://localhost/personalSite");
-mongoose.connect(process.env.DATABASE);
+mongoose.connect("mongodb://localhost/personalSite");
+//mongoose.connect(process.env.DATABASE);
 //seedDB()
 
 // view engine setup
